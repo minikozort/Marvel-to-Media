@@ -12,7 +12,7 @@ function getMarvelApi() {
       console.log(data);
       const results = data.data.results[0];
       console.log(results);
-      
+
       const characterName = results.name;
       console.log(results.name);
 
@@ -21,9 +21,12 @@ function getMarvelApi() {
 
       const characterSeries = results.name;
       console.log(results.series.available);
-      
+
       const characterStories = results.name;
       console.log(results.stories.available);
+
+      const characterId = results.id;
+      console.log(results.id);
     });
 }
 
