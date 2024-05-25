@@ -15,8 +15,9 @@ function handleSearch(event) {
     let characterChoice = characterInput.value;
     character.push(characterChoice);
     localStorage.setItem('character', JSON.stringify(character));
-    console.log(characterChoice);
+
     characterInput.value = "";
+    getMarvelApi(characterChoice);
 }
 
 searchSubmit.addEventListener('click', handleSearch);
