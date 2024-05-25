@@ -1,5 +1,5 @@
 const characterInput = document.querySelector('#custom-search-input');
-const searchSubmit = document.querySelector('#search-button')
+const searchSubmit = document.querySelector('#search-button');
 
 let character = JSON.parse(localStorage.getItem('character'));
 
@@ -18,6 +18,7 @@ function handleSearch(event) {
 
     characterInput.value = "";
     getMarvelApi(characterChoice);
+    searchMoviesByName(characterChoice);
 }
 
 searchSubmit.addEventListener('click', handleSearch);
