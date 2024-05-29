@@ -22,6 +22,10 @@ function getMarvelApi(characterNameInput) {
 
       const characterComics = results.comics.available;
       console.log(characterComics)
+      console.log(results);
+
+      const characterName = results.name;
+      console.log(results.name);
 
       const characterSeries = results.series.available;
       console.log(characterSeries);
@@ -38,7 +42,16 @@ function getMarvelApi(characterNameInput) {
       const thirdComicBookName = results.comics.items[2].name;
       console.log(thirdComicBookName);
 
-      
+
+      const characterSeries = results.name;
+      console.log(results.series.available);
+
+      const characterStories = results.name;
+      console.log(results.stories.available);
+
+      const characterId = results.id;
+      console.log(results.id);
+
     });
 }
 
