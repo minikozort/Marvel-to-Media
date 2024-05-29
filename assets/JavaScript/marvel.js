@@ -12,7 +12,7 @@ function getMarvelApi(characterNameInput) {
       const results = data.data.results[0];
       console.log(data)
 
-      const characterId = results.id;
+      let characterId = results.id;
       console.log(characterId);
 
       searchByCharacterId(characterId);
@@ -27,10 +27,10 @@ function getMarvelApi(characterNameInput) {
       const characterName = results.name;
       console.log(results.name);
 
-      const characterSeries = results.series.available;
+      let characterSeries = results.series.available;
       console.log(characterSeries);
 
-      const characterStories = results.stories.available;
+      let characterStories = results.stories.available;
       console.log(characterStories);
       const exampleComicBookName = results.comics.items[0];
       console.log(exampleComicBookName);

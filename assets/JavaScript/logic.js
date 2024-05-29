@@ -17,8 +17,22 @@ function handleSearch(event) {
     localStorage.setItem('character', JSON.stringify(character));
 
     characterInput.value = "";
-    getMarvelApi(characterChoice);
-    searchMoviesByName(characterChoice);
+    // getMarvelApi(characterChoice);
+    // searchMoviesByName(characterChoice);
+    searchHistory();
 }
+
+function searchHistory() {
+    $("search-history-buttons").html("");
+    for (const c of character) {
+      const searchHistoryCharacter = $("<button>");
+      searchHistoryCharacter.text(c).addClass("btn btn-info btn-block custom-btn");
+      $("search-history-buttons").append(searchHistoryCharacter);
+      searchHistoryCharacter.on('click', function (event) {
+        event.preventDefault();
+        $("#custom-search-input").val(c);
+      });
+    }
+  }
 
 searchSubmit.addEventListener('click', handleSearch);
