@@ -43,15 +43,6 @@ function getMarvelApi(characterNameInput) {
       console.log(thirdComicBookName);
 
 
-      const characterSeries = results.name;
-      console.log(results.series.available);
-
-      const characterStories = results.name;
-      console.log(results.stories.available);
-
-      const characterId = results.id;
-      console.log(results.id);
-
     });
 }
 
