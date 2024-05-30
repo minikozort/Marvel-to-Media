@@ -10,10 +10,10 @@ function getMarvelApi(characterNameInput) {
     })
     .then(function (data) {
       const results = data.data.results[0];
-      console.log(data)
+      // console.log(data)
 
-      let characterId = results.id;
-      console.log(characterId);
+      const characterId = results.id;
+      // console.log(characterId);
 
       searchByCharacterId(characterId);
 
@@ -22,18 +22,18 @@ function getMarvelApi(characterNameInput) {
 
       const characterComics = results.comics.available;
       console.log(characterComics)
-      console.log(results);
+      // console.log(results);
 
       const characterName = results.name;
-      console.log(results.name);
+      console.log(characterName);
 
-      let characterSeries = results.series.available;
+      const characterSeries = results.series.available;
       console.log(characterSeries);
 
-      let characterStories = results.stories.available;
+      const characterStories = results.stories.available;
       console.log(characterStories);
       const exampleComicBookName = results.comics.items[0];
-      console.log(exampleComicBookName);
+      // console.log(exampleComicBookName);
 
       const firstComicBookName = results.comics.items[0].name;
       console.log(firstComicBookName);
@@ -76,6 +76,7 @@ function searchByCharacterId(characterId) {
         console.log(thumbnailThree);
       });
   }
+
 
 
 

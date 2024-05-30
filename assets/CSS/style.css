@@ -25,6 +25,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    font: 'Bangers' , 'Ariel' , 'Sans';
+	background-image: url(https://images5.alphacoders.com/399/thumb-1920-399453.jpg); 
 }
 ol, ul {
 	list-style: none;
@@ -40,13 +42,6 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
-
-body {
-    font: 'Bangers' , 'Ariel' , 'Sans';
-	background-image: url(https://images5.alphacoders.com/399/thumb-1920-399453.jpg); 
-
-	
 }
 
 .bangers-regular {

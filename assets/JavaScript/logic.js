@@ -23,7 +23,7 @@ function handleSearch(event) {
 
     characterInput.value = "";
     getMarvelApi(characterChoice);
-    searchMoviesByName(characterChoice)
+    searchMoviesByName(characterChoice);
     searchHistory();
 }
 

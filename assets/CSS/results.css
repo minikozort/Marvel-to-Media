@@ -4,7 +4,6 @@
     flex-direction: column;
     justify-content: flex-start; /* Align content to the top */
     align-items: center; /* Center the content horizontally */
-    height: 100px; /* Adjust the height as needed */
     border: 1px solid #000;
     border-bottom: none;
 }
@@ -13,5 +12,5 @@
     margin: 10px; /* Remove default margin */
     font-size: 30px;
     -webkit-text-stroke: 2px rgb(221, 249, 255);
-    -webkit-text-fill-color: transparent;
+    /* -webkit-text-fill-color: transparent; */
 }
