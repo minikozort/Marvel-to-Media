@@ -2,7 +2,7 @@ const tmdbKey = "a70f2e920e9ea44a64b46b5c1e563605";
 const baseUrl = "https://api.themoviedb.org/3";
 
 function searchMoviesByName(characterInput) {
-  characterInput = characterInput + "Marvel";
+  // characterInput = characterInput;
   const endpoint = "/search/movie";
   const requestUrl = `${baseUrl}${endpoint}?api_key=${tmdbKey}&query=${encodeURIComponent(
     characterInput
