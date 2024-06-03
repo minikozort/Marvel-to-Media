@@ -12,7 +12,6 @@ function searchMoviesByName(characterInput) {
     })
     .then(function (data) {
       const results = data.results.slice(0, 3); // Get the first three movies
-      console.log(results);
       movieSection.empty();
       results.forEach((movie) => {
         const mediaCard = $("<div>");
@@ -22,7 +21,7 @@ function searchMoviesByName(characterInput) {
         const image = $("<img>");
         const imageUrl = movie.backdrop_path
           ? `https://image.tmdb.org/t/p/w500${movie.backdrop_path}`
-          : "placeholder.jpg";
+          : "https://as1.ftcdn.net/v2/jpg/01/34/69/04/1000_F_134690471_gkhcYkLqUQ8Ooc81J1ugeS2CJEqMseJP.jpg";
         image.attr("src", imageUrl);
         const cardSection = $("<div>");
         cardSection.addClass("card-section");
