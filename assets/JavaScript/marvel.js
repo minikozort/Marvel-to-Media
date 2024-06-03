@@ -11,28 +11,20 @@ function getMarvelApi(characterNameInput) {
     })
     .then(function (data) {
       const results = data.data.results[0];
-      // console.log(data)
       const characterId = results.id;
-      // console.log(characterId);
       searchByCharacterId(characterId);
       const characterName = results.name;
-      console.log(characterName);
       $("#search-results-left").empty();
       const characterInfo = $("<div>");
       characterInfo.addClass("info card").css({ height: "300px" });
       const cardHeader = $("<h1>").text(characterName);
       const characterDescription = results.description;
-      console.log(characterDescription);
       const description = $("<p>").text(characterDescription);
       const characterComics = results.comics.available;
-      console.log(characterComics);
       const comics = $("<p>").text("Available Comics: " + characterComics);
-      // console.log(results);
       const characterSeries = results.series.available;
-      console.log(characterSeries);
       const series = $("<p>").text("Available Series: " + characterSeries);
       const characterStories = results.stories.available;
-      console.log(characterStories);
       const stories = $("<p>").text("Available Stories: " + characterStories);
       characterInfo.append(cardHeader, description, comics, series, stories);
       comicBooksResult.append(characterInfo);
