@@ -16,7 +16,7 @@ On the right hand side of the page, users can view 3 sample movies and read abou
 
 Credits:
 Goksel Gokkocabas: https://github.com/minikozort
-Erkan Okten: https://github.com/ekookte
+Erkan Okten: https://github.com/ekookten
 Briana Gil: https://github.com/brianapgil
 
 
