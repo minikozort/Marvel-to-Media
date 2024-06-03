@@ -12,7 +12,7 @@ const comicCharacterResult = $("#comicbooks");
 function getMarvelApi(characterNameInput) {
   const mainUrl = `https://gateway.marvel.com`;
   const requestUrl = `${mainUrl}/v1/public/characters?nameStartsWith=${characterNameInput}&apikey=${marvelKey}`;
-  
+
   // Fetch character data from the Marvel API
   fetch(requestUrl)
     .then(function (response) {

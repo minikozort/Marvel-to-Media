@@ -12,18 +12,18 @@ let character = JSON.parse(localStorage.getItem("character"));
 function handleSearch(event) {
   // Prevent the default form submission behavior if the event exists
   if (event) {
-      event.preventDefault();
+    event.preventDefault();
   }
-  
+
   // Check if the input field is empty and alert the user if it is
   if (!characterInput.value) {
-      alert('You need a search input value!');
-      return;
+    alert("You need a search input value!");
+    return;
   }
 
   // Initialize the search history array if it doesn't exist
   if (!character) {
-      character = [];
+    character = [];
   }
 
   // Get the character name from the input field
@@ -31,8 +31,8 @@ function handleSearch(event) {
 
   // Add the character to the search history and save it to localStorage
   if (event) {
-      character.push(characterChoice);
-      localStorage.setItem('character', JSON.stringify(character));
+    character.push(characterChoice);
+    localStorage.setItem("character", JSON.stringify(character));
   }
 
   // Clear the input field
