@@ -1,119 +1,230 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+/* Reset CSS styles for various HTML elements */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  border: 0; /* Remove default border */
+  font-size: 100%; /* Set font size to 100% */
+  font: inherit; /* Inherit font properties */
+  vertical-align: baseline; /* Align elements to the baseline */
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; /* Ensure these elements are displayed as block */
 }
+
 body {
-	line-height: 1;
-    font: 'Bangers' , 'Ariel' , 'Sans';
-	background-image: url(https://images5.alphacoders.com/399/thumb-1920-399453.jpg); 
+  line-height: 1; /* Set line height to 1 */
+  font: "Bangers", "Arial", "Sans"; /* Set font family */
+  background-image: url(https://images5.alphacoders.com/399/thumb-1920-399453.jpg); /* Set background image */
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+  list-style: none; /* Remove default list styles */
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+  quotes: none; /* Remove default quotes */
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: ""; /* Remove default content for quotes */
+  content: none; /* Remove default content for quotes */
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse; /* Collapse table borders */
+  border-spacing: 0; /* Remove table cell spacing */
 }
 
+/* Custom font class */
 .bangers-regular {
-    font-family: "Bangers", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    text-shadow: 1px 5px 1px rgba(241, 233, 233, 0.8);
-  }
-
-  .search-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-  }
-  .custom-header {
-	font-size: 50px;
-	width: 100%;
-	text-align: center;
-	-webkit-text-stroke: 2px rgb(0, 0, 0);
-    -webkit-text-fill-color: transparent;
-	padding: 5px;
-}
-.form-input{
-	margin: 5px;
-	margin-bottom: 10px;
-	width: 75%;
+  font-family: "Bangers", system-ui; /* Set custom font family */
+  font-weight: 400; /* Set font weight */
+  font-style: normal; /* Set font style */
+  text-shadow: 1px 5px 1px rgba(241, 233, 233, 0.8); /* Set text shadow */
 }
 
+/* Search container styling */
+.search-container {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange children in a column */
+  align-items: center; /* Center-align children horizontally */
+}
+
+/* Custom header styling */
+.custom-header {
+  font-size: 50px; /* Set font size */
+  width: 100%; /* Set width to 100% */
+  text-align: center; /* Center-align text */
+  -webkit-text-stroke: 2px rgb(0, 0, 0); /* Set text stroke for Webkit browsers */
+  -webkit-text-fill-color: transparent; /* Set text fill color to transparent for Webkit browsers */
+  padding: 5px; /* Add padding */
+}
+
+/* Form input styling */
+.form-input {
+  margin: 5px; /* Add margin */
+  margin-bottom: 10px; /* Add bottom margin */
+  width: 75%; /* Set width to 75% */
+}
+
+/* Custom button styling */
 .custom-button {
-    margin: 5px;
-    margin-bottom: 10px;
-    width: 40%;
-    height: 30px;
-    background-color: rgba(141, 30, 24, 0.8); /* Adjust the alpha value (last parameter) for transparency */
-    cursor: pointer; /* Change cursor to a pointer/hand gesture */
+  margin: 5px; /* Add margin */
+  margin-bottom: 10px; /* Add bottom margin */
+  width: 40%; /* Set width to 40% */
+  height: 30px; /* Set height */
+  background-color: rgba(
+    141,
+    30,
+    24,
+    0.8
+  ); /* Set background color with transparency */
+  cursor: pointer; /* Change cursor to pointer on hover */
 }
 
+/* Custom button hover effect */
 .custom-button:hover {
-    background-color: rgb(0, 141, 192); /* Adjust background color on hover */
+  background-color: rgb(0, 141, 192); /* Change background color on hover */
 }
 
+/* Custom button text styling */
 .custom-button-text {
-    color: #000;
+  color: #000; /* Set text color to black */
 }
 
-
+/* General button styling */
 .button {
-	display: inline-block;
-    vertical-align: middle;
-    margin: 7px;
-    padding: 5px;
-    border: 1px solid transparent;
-    border-radius: 0;
-	background: none !important;
-	background-color: rgba(0, 141, 192, 0.8)!important; /* Adjust the alpha value (last parameter) for transparency */
-    -webkit-transition: background-color .25s ease-out, color .25s ease-out;
-    transition: background-color .25s ease-out, color .25s ease-out;
-    font-family: inherit;
-    font-size: .9rem;
-    -webkit-appearance: none;
-    line-height: 1;
-    text-align: center;
-    color: #000 !important;
-    /* font-weight: bold; */
-    cursor: pointer;
-  
+  display: inline-block; /* Display as inline-block */
+  vertical-align: middle; /* Align vertically in the middle */
+  margin: 7px; /* Add margin */
+  padding: 5px; /* Add padding */
+  border: 1px solid transparent; /* Set border */
+  border-radius: 0; /* No border radius */
+  background: none !important; /* Remove background */
+  background-color: rgba(
+    0,
+    141,
+    192,
+    0.8
+  ) !important; /* Set background color with transparency */
+  -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out; /* Add transition effect for Webkit browsers */
+  transition: background-color 0.25s ease-out, color 0.25s ease-out; /* Add transition effect */
+  font-family: inherit; /* Inherit font family */
+  font-size: 0.9rem; /* Set font size */
+  -webkit-appearance: none; /* Remove default appearance for Webkit browsers */
+  line-height: 1; /* Set line height */
+  text-align: center; /* Center-align text */
+  color: #000 !important; /* Set text color to black */
+  cursor: pointer; /* Change cursor to pointer on hover */
 }
 
-#custom-search-input{
-    opacity: 0.9;
+/* Search input styling */
+#custom-search-input {
+  opacity: 0.9; /* Set opacity */
 }
 
+/* Button hover effect */
 .button:hover {
-    background-color: rgb(141, 30, 24)!important;
+  background-color: rgb(
+    141,
+    30,
+    24
+  ) !important; /* Change background color on hover */
 }

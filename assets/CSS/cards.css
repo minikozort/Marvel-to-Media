@@ -1,53 +1,62 @@
+/* Set a fixed height for all images */
 img {
-    height: 200px !important;
-  }
+  height: 200px !important; /* Force image height to 200px */
+}
 
-  .imageclass{
-    margin: 20px;
-  }
+/* Styling for elements with the class "imageclass" */
+.imageclass {
+  margin: 20px; /* Add margin around the element */
+}
 
-  .info p{
-    padding: 10px;
-    text-shadow: 1px 5px 1px rgba(20, 19, 19, 0.8);
-  }
-  .info{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: none !important;
-    color: #fff;
-    margin: 2px;
-    border: none;
-  
-  }
-  .info h1 {
-    font-size: 40px;
-    padding-bottom: 30px;
-    text-shadow: 1px 5px 1px rgba(159, 2, 2, 0.8); /* Horizontal shadow, vertical shadow, blur radius, color */
-  }
+/* Styling for paragraphs inside elements with the class "info" */
+.info p {
+  padding: 10px; /* Add padding inside the element */
+  text-shadow: 1px 5px 1px rgba(20, 19, 19, 0.8); /* Add text shadow */
+}
 
-  .card{
-    background: none;
-    border: none;
-    margin: 10px;
-    color: #fff;
-  }
-  .card-divider{
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    background: none;
-    text-shadow: 1px 5px 1px rgba(159, 2, 2, 0.8);
-    color: #fff;
-  }
+/* Styling for elements with the class "info" */
+.info {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center-align children horizontally */
+  align-items: center; /* Center-align children vertically */
+  background: none !important; /* Remove background */
+  color: #fff; /* Set text color to white */
+  margin: 2px; /* Add margin */
+  border: none; /* Remove border */
+}
 
-  .card p{
-    padding: 5px;
-    text-shadow: 1px 5px 1px rgba(20, 19, 19, 0.8);
-  }
+/* Styling for h1 elements inside elements with the class "info" */
+.info h1 {
+  font-size: 40px; /* Set font size */
+  padding-bottom: 30px; /* Add padding at the bottom */
+  text-shadow: 1px 5px 1px rgba(159, 2, 2, 0.8); /* Add text shadow */
+}
 
-  .comicsSection img{
-    margin: 20px;
+/* Styling for elements with the class "card" */
+.card {
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  margin: 10px; /* Add margin */
+  color: #fff; /* Set text color to white */
+}
 
-  }
+/* Styling for elements with the class "card-divider" */
+.card-divider {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center-align children horizontally */
+  font-size: 20px; /* Set font size */
+  background: none; /* Remove background */
+  text-shadow: 1px 5px 1px rgba(159, 2, 2, 0.8); /* Add text shadow */
+  color: #fff; /* Set text color to white */
+}
 
+/* Styling for paragraphs inside elements with the class "card" */
+.card p {
+  padding: 5px; /* Add padding */
+  text-shadow: 1px 5px 1px rgba(20, 19, 19, 0.8); /* Add text shadow */
+}
+
+/* Styling for images inside elements with the class "comicsSection" */
+.comicsSection img {
+  margin: 20px; /* Add margin around the image */
+}

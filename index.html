@@ -4,15 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marvel to Media</title>
+    <!-- Importing Google Fonts for custom font 'Bangers' -->
     <link
       href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
       rel="stylesheet"
     />
+    <!-- Importing Foundation CSS for responsive design and styling -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation.min.css"
       crossorigin="anonymous"
     />
+    <!-- Importing custom CSS stylesheets -->
     <link rel="stylesheet" href="./assets/CSS/style.css" />
     <link rel="stylesheet" href="/assets/CSS/results.css" />
     <link rel="stylesheet" href="./assets/CSS/cards.css" />
@@ -20,33 +23,41 @@
   <body class="bangers-regular">
     <div class="grid-x">
       <div class="cell">
+        <!-- Main header of the page -->
         <h1 class="custom-header cell text-center">Marvel to Media</h1>
       </div>
       <div
         class="cell small-12 medium-8 medium-offset-2 large-6 large-offset-3"
       >
+        <!-- Search form -->
         <form id="search-form" class="form w-100 text-center">
           <div class="search-container">
+            <!-- Search input field -->
             <input
               id="custom-search-input"
               class="form-input w-100"
               type="input"
               placeholder="Type in a character here"
             />
+            <!-- Search button -->
             <button id="search-button" class="custom-button">
               <a class="custom-button-text expanded">SEARCH</a>
             </button>
+            <!-- Container for search history buttons -->
             <div id="search-history-buttons"></div>
           </div>
         </form>
       </div>
+      <!-- Main results container -->
       <div class="main-results-div cell large-12">
         <div class="grid-x">
+          <!-- Comic books results section -->
           <div class="cell large-6 search-results-left">
             <h2 class="search-results-header">Comic Books</h2>
             <div id="search-results-left"></div>
             <div id="comicbooks" class="grid-x full"></div>
           </div>
+          <!-- Movies and TV shows results section -->
           <div class="cell large-6 search-results-right">
             <h2 class="search-results-header">Movies and TV shows</h2>
             <div id="search-results-right" class="grid-x moviesclass"></div>
@@ -55,8 +66,10 @@
       </div>
     </div>
   </body>
+  <!-- Importing jQuery and jQuery UI libraries for DOM manipulation and effects -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+  <!-- Importing custom JavaScript files -->
   <script src="./assets/JavaScript/logic.js"></script>
   <script src="./assets/JavaScript/marvel.js"></script>
   <script src="./assets/JavaScript/media.js"></script>
