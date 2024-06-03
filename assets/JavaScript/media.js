@@ -13,7 +13,9 @@ const movieSection = $("#search-results-right");
  */
 function searchMoviesByName(characterInput) {
   const endpoint = "/search/movie";
-  const requestUrl = `${baseUrl}${endpoint}?api_key=${tmdbKey}&query=${encodeURIComponent(characterInput)}`;
+  const requestUrl = `${baseUrl}${endpoint}?api_key=${tmdbKey}&query=${encodeURIComponent(
+    characterInput
+  )}`;
 
   // Fetch movie data from the TMDB API
   fetch(requestUrl)
@@ -50,7 +52,9 @@ function searchMoviesByName(characterInput) {
 
         // Create and set the overview, release date, and popularity elements
         const overview = $("<p>").text("Overview: " + movie.overview);
-        const releaseDate = $("<p>").text("Release Date: " + movie.release_date);
+        const releaseDate = $("<p>").text(
+          "Release Date: " + movie.release_date
+        );
         const popularity = $("<p>").text("Popularity: " + movie.popularity);
 
         // Append the movie details to the card section

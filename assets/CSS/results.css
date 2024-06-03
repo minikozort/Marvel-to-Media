@@ -1,18 +1,17 @@
 .search-results-left,
 .search-results-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Align content to the top */
-    align-items: center; /* Center the content horizontally */
-    border: 1px solid #000;
-    border-bottom: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+  align-items: center; /* Center the content horizontally */
+  border: 1px solid #000;
+  border-bottom: none;
 }
 
 .search-results-header {
-    margin: 10px; /* Remove default margin */
-    font-size: 30px;
-    -webkit-text-stroke: 2px rgb(181, 202, 206);
-     text-shadow: 1px 5px 1px rgba(194, 16, 16, 0.8);
-    /* -webkit-text-fill-color: transparent; */
+  margin: 10px; /* Remove default margin */
+  font-size: 30px;
+  -webkit-text-stroke: 2px rgb(181, 202, 206);
+  text-shadow: 1px 5px 1px rgba(194, 16, 16, 0.8);
+  /* -webkit-text-fill-color: transparent; */
 }
-
