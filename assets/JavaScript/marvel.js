@@ -1,3 +1,4 @@
+
 let marvelKey = "1d8194dbe39306bb0084f04db35515ea";
 const comicBooksResult = $("#search-results-left");
 const comicCharacterResult = $("#comicbooks")
@@ -45,7 +46,6 @@ function searchByCharacterId(characterId) {
       return response.json();
     })
     .then(function (data) {
-      console.log(data);
       // Clear any existing content
       $("#comicbooks").empty();
       const comicsSection = $("<div>").addClass("comicsSection");
