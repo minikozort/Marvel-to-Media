@@ -228,3 +228,7 @@ table {
     24
   ) !important; /* Change background color on hover */
 }
+
+.reveal h1{
+  font-size: 30px;
+}

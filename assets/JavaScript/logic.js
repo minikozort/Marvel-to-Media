@@ -85,3 +85,16 @@ $("#search-history-buttons").on(
 
 // Add an event listener to the search button to handle the search
 searchSubmit.addEventListener("click", handleSearch);
+
+
+      
+      const modalButton = $(".close-button");
+      // Open modal on page load
+      
+      $(document).ready(function(){
+        $(document).foundation();
+          const modal = new Foundation.Reveal($('#exampleModal1'));
+          modal.open();
+
+
+      });
